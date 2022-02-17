@@ -2,7 +2,8 @@
   <div class = "contents-kid">
   <% @arts.each do |art| %>
       <div class="title">
-        <%= art.title %>
+        <%# art.title %>
+        <%= link_to art.title, art_path(art.id), method: :get %>
       </span>
   <% end %>
   </div>
