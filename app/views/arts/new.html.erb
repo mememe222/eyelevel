@@ -1,6 +1,6 @@
 <div class="contents">
   <div class="container">
-    <h3 class="sinki">新規アート</h3>
+    <h3 class="sinki">新規アート追加</h3>
     <%= form_with(model: @arts, local: true) do |form| %>
       <div>
       <%= form.text_field :title, class:"title-form", placeholder: "Title" %>
@@ -10,7 +10,7 @@
       <%= form.text_area :memo, class:"memo-form", placeholder: "Memo", rows: "10" %>
       </div>
       <div class="form3">
-      <%= form.submit "SEND",class:"send-btn" %>
+      <%= form.submit "Send",class:"send btn" %>
       </div>
     <% end %>
   </div>
