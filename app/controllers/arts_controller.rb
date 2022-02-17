@@ -8,7 +8,11 @@ class ArtsController < ApplicationController
   end
 
   def create
-    Art.create(art_params)
+    if Art.create(art_params)
+      redirect_to root_path
+    else
+      render :new
+    end
   end
 
   private

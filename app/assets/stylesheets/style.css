@@ -90,11 +90,30 @@ a.post:hover{
   border-bottom: 1px solid #385840;
 }
 
-
 .contents{
-  height: calc(100vh - 160px);
   background-color: #fff3de;
+  height: calc(100vh - 195px);
+  display: flex;
 }
+
+.contents-kid{
+  background-color: rgb(255, 255, 255);
+  padding: 50px 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: calc(100vw - 400px);
+  margin: 0 auto;
+  height: 100%;
+  border-left:7px solid #e5a199 ;
+  border-right: 7px solid #e5a199;
+}
+
+.title{
+  background-color: #618ab3;
+}
+
+
 
 .container{
   background-color: rgb(255, 255, 255);
@@ -116,25 +135,43 @@ a.post:hover{
 .title-form{
   font-size: 30px;
   margin-bottom: 30px;
-  width: 600px;
+  width: 500px;
   height: 50px;
-  background-color: #ffeefc;
-  border: double 5px #385840;
+  border: 4px solid #82636b;
+  border-radius: 240px 15px 185px 15px / 15px 200px 15px 185px;
+  margin: 2em 0;
+  padding: 30px;
 }
+
 
 .memo-form{
   font-size: 30px;
   margin-bottom: 50px;
   width: 600px;
   height: 400px;
-  background-color: #f0f9ff;
-  border: double 5px #66bb6a;
+  border: 4px solid #82636b;
+  border-radius: 240px 15px 185px 15px / 15px 200px 15px 185px;
+  margin: 2em 0;
+  padding: 30px;
 }
 
-.send-btn{
+.send{
+  font-weight: bold;
+  color: #ffffff;
+  border-bottom: 5px solid #82636b;
+  padding: 10px 100px;
+  text-decoration: none;
+  background-color: #B67D86;
   font-size: 30px;
   margin-bottom: 50px;
   width: 400px;
+}
+
+.send:hover{
+  color: #e5e5e5;
+  margin-top: 4px;
+  background: #a06b73;
+  border-bottom: 1px solid #385840;
 }
 
 
@@ -144,7 +181,14 @@ a.post:hover{
 .footer{
   text-align: center;
   color: #71718d;
+  background-color: #ffffff;
   position: absolute;
   left: 0;
   right: 0;
+  position: fixed; /* フッターを固定する */
+  bottom: 0; /* 上部から配置の基準位置を決める */
+  left: 0; /* 左から配置の基準位置を決める */
+  width: 100%; /* フッターの横幅を指定する */
+  height: 35px; /* フッターの高さを指定する */
+  padding:10px; /* フッター内側の余白を指定する(上下左右) */
 }
