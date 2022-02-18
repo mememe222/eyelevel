@@ -4,7 +4,12 @@
       <div class="title">
         <%# art.title %>
         <%= link_to art.title, art_path(art.id), method: :get %>
-      </span>
+      </div>
+
+      <div class = "image">
+        <%= image_tag art.images[0].variant(resize: '500x500'), class: 'art-image' %>
+
+      </div>
   <% end %>
   </div>
 </div>

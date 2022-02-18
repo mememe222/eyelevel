@@ -1,14 +1,15 @@
-<div class="contents row">
-    <div class="more">
-      <span><%# image_tag 'arrow_top.png' %></span>
-      <ul class="more_list">
-        </li>
-        <li>
-          <%# link_to '削除', tweet_path(@tweet.id), method: :delete %>
-        </li>
-      </ul>
-    </div>
-    <p><%= @art.title %></p>
-    <span class="name"><%= @art.memo %>
-    </span>
+<div class="contents">
+  <div class="posted-content">
+  <%= image_tag @art.images[0], class: "main-image" %><br>
+  <div class="other-images">
+    <% @art.images[1..-1].each do |image| %>
+      <div class="other-image">
+        <%= image_tag image %>
+      </div>
+    <%end%>
+  </div>
+  <%= @art.title%><br>
+  <%= @art.memo%><br>
+  <%# link_to '編集', edit_post_path(@post.id)%>
+</div>
 </div>
