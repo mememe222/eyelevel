@@ -92,7 +92,7 @@ a.post:hover{
 
 .contents{
   background-color: #fff3de;
-  height: calc(100vh - 195px);
+  height: 100％;
   display: flex;
 }
 
@@ -104,15 +104,15 @@ a.post:hover{
   flex-direction: column;
   width: calc(100vw - 400px);
   margin: 0 auto;
-  height: 100%;
   border-left:7px solid #e5a199 ;
   border-right: 7px solid #e5a199;
 }
 
-.title{
-
+.new-contents{
+  background-color: #fff3de;
+  height: 100vh;
+  display: flex;
 }
-
 
 
 .container{
@@ -137,9 +137,8 @@ a.post:hover{
   margin-bottom: 30px;
   width: 500px;
   height: 50px;
-  border: 4px solid #82636b;
+  border: 4px solid #7a5b63;
   border-radius: 240px 15px 185px 15px / 15px 200px 15px 185px;
-  margin: 2em 0;
   padding: 30px;
 }
 
@@ -153,6 +152,10 @@ a.post:hover{
   border-radius: 240px 15px 185px 15px / 15px 200px 15px 185px;
   margin: 2em 0;
   padding: 30px;
+}
+
+.image-file{
+  margin-bottom: 50px;
 }
 
 .send{
@@ -174,7 +177,25 @@ a.post:hover{
   border-bottom: 1px solid #385840;
 }
 
+.show-contents{
+  background-color: #fff3de;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+}
 
+
+.more{
+  background-color: rgb(255, 255, 255);
+  padding: 50px 40px;
+
+  display: flex;
+  flex-direction: column;
+  width: calc(100vw - 400px);
+  margin: 0 auto;
+  border-left:7px solid #e5a199 ;
+  border-right: 7px solid #e5a199;
+}
 
 
 

@@ -22,7 +22,7 @@ class ArtsController < ApplicationController
   private
 
   def art_params
-    params.require(:art, :image).permit(:title, :memo)
+    params.require(:art).permit(:title, :memo, :image)
   end
 
 end

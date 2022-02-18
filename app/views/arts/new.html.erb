@@ -1,7 +1,7 @@
-<div class="contents">
+<div class="new-contents">
   <div class="container">
     <h3 class="sinki">新規アート追加</h3>
-    <%= form_with(model: @arts, local: true) do |form| %>
+    <%= form_with(model: @arts, local: true,id: 'new_post') do |form| %>
       <div>
       <%= form.text_field :title, class:"title-form", placeholder: "Title" %>
       </div>
@@ -9,9 +9,21 @@
       <div class="form2">
       <%= form.text_area :memo, class:"memo-form", placeholder: "Memo", rows: "10" %>
       </div>
+      <label class="form-image">
+
+
+      <div class="image-file">
+
+        <div id="previews"></div>
+
+        <%= form.file_field :image, class: 'hidden', name: 'post[images][]' %>
+      </div>
+
+
       <div class="form3">
       <%= form.submit "Send",class:"send btn" %>
       </div>
+    </label>
     <% end %>
   </div>
 </div>
