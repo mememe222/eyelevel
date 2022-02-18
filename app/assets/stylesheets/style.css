@@ -223,7 +223,12 @@ a.post:hover{
 }
 
 
-
+.image-delete-button {
+  text-align: center;
+  border: solid 1px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
 
 
 
