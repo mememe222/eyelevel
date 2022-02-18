@@ -1,11 +1,15 @@
-<div class="show-contents">
-  <div class="more">
-    <%= @art.title %>
-    <div class="memo">
-      <%= @art.memo %>
-    </div>
-    <div class = "image">
-      <%= image_tag @art.image.variant(resize: '500x500'), class: 'art-image' %>
-    </div>
+<div class="contents">
+  <div class="posted-content">
+  <%= image_tag @art.images[0], class: "main-image" %><br>
+  <div class="other-images">
+    <% @art.images[1..-1].each do |image| %>
+      <div class="other-image">
+        <%= image_tag image %>
+      </div>
+    <%end%>
   </div>
+  <%= @art.title%><br>
+  <%= @art.memo%><br>
+  <%# link_to '編集', edit_post_path(@post.id)%>
+</div>
 </div>

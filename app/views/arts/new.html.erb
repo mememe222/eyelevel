@@ -1,4 +1,4 @@
-<div class="new-contents">
+<div class="contents">
   <div class="container">
     <h3 class="sinki">新規アート追加</h3>
     <%= form_with(model: @arts, local: true,id: 'new_post') do |form| %>
@@ -16,7 +16,7 @@
 
         <div id="previews"></div>
 
-        <%= form.file_field :image, class: 'hidden', name: 'post[images][]' %>
+        <%= form.file_field :images, class: 'hidden', name: 'post[images][]', data: {index: 0} %>
       </div>
 
 

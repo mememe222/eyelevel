@@ -199,6 +199,36 @@ a.post:hover{
 
 
 
+
+
+
+
+.other-images {
+  display: flex;
+}
+
+.other-image {
+  margin-right: 10px;
+}
+
+.image-delete-button {
+  text-align: center;
+  border: solid 1px;
+  cursor: pointer;
+}
+
+.main-image {
+  height: 200px;
+  width: 200px;
+}
+
+
+
+
+
+
+
+
 .footer{
   text-align: center;
   color: #71718d;
