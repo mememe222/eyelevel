@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function(){
     // 削除ボタンを生成
     const deleteButton = document.createElement("div");
     deleteButton.setAttribute("class", "image-delete-button");
-    deleteButton.innerText = "削除";
+    deleteButton.innerText = "Delete";
 
     // 削除ボタンをクリックしたらプレビューとfile_fieldを削除させる
     deleteButton.addEventListener("click", () => deleteImage(dataIndex));
@@ -54,10 +54,10 @@ document.addEventListener('DOMContentLoaded', function(){
     // 生成したfile_fieldを表示
     const fileFieldsArea = document.querySelector('.click-upload');
     fileFieldsArea.appendChild(newFileField);
-    };
+  };
 
-    // 指定したdata-indexを持つプレビューとfile_fieldを削除する
-    const deleteImage = (dataIndex) => {
+  // 指定したdata-indexを持つプレビューとfile_fieldを削除する
+  const deleteImage = (dataIndex) => {
     const deletePreviewImage = document.querySelector(`.preview[data-index="${dataIndex}"]`);
     deletePreviewImage.remove();
     const deleteFileField = document.querySelector(`input[type="file"][data-index="${dataIndex}"]`);
@@ -94,7 +94,6 @@ document.addEventListener('DOMContentLoaded', function(){
     };
 
     buildPreviewImage(dataIndex, blob);
-
 
     // 画像の枚数制限に引っかからなければ、新しいfile_fieldを追加する
     const imageCount = document.querySelectorAll(".preview").length;

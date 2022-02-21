@@ -9,22 +9,17 @@
       <div class="form2">
       <%= form.text_area :memo, class:"memo-form", placeholder: "Memo", rows: "10" %>
       </div>
-      <label class="form-image">
-
 
       <div class="image-file">
-
         <div id="previews"></div>
-
         <div class="click-upload">
           <%= form.file_field :images, name: 'art[images][]', data: {index: 0} %>
         </div>
-
-
-      <div class="form3">
-      <%= form.submit "Send",class:"send btn" %>
       </div>
-    </label>
+
+        <div class="form3">
+          <%= form.submit "Send",class:"send btn" %>
+        </div>
     <% end %>
   </div>
 </div>
