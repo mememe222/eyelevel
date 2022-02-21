@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function(){
   if (!postForm) return null;
 
   // 投稿できる枚数の制限を定義
-  const imageLimits = 10;
+  const imageLimits = 5;
 
   // プレビュー画像を生成・表示する関数
   const buildPreviewImage = (dataIndex, blob) =>{
@@ -54,10 +54,10 @@ document.addEventListener('DOMContentLoaded', function(){
     // 生成したfile_fieldを表示
     const fileFieldsArea = document.querySelector('.click-upload');
     fileFieldsArea.appendChild(newFileField);
-    };
+  };
 
-    // 指定したdata-indexを持つプレビューとfile_fieldを削除する
-    const deleteImage = (dataIndex) => {
+  // 指定したdata-indexを持つプレビューとfile_fieldを削除する
+  const deleteImage = (dataIndex) => {
     const deletePreviewImage = document.querySelector(`.preview[data-index="${dataIndex}"]`);
     deletePreviewImage.remove();
     const deleteFileField = document.querySelector(`input[type="file"][data-index="${dataIndex}"]`);
@@ -94,7 +94,6 @@ document.addEventListener('DOMContentLoaded', function(){
     };
 
     buildPreviewImage(dataIndex, blob);
-
 
     // 画像の枚数制限に引っかからなければ、新しいfile_fieldを追加する
     const imageCount = document.querySelectorAll(".preview").length;
