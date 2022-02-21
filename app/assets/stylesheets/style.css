@@ -220,13 +220,16 @@ a.post:hover{
   border-right: 7px solid #e5a199;
 }
 
+.preview-image{
+  width: 700px;
+}
 
 .image-delete-button {
   text-align: center;
   border: solid 1px;
   cursor: pointer;
   width: 300px;
-  margin: 5px auto 15px auto;
+  margin: 5px auto 50px auto;
 }
 
 .other-image{
