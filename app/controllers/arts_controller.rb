@@ -19,6 +19,13 @@ class ArtsController < ApplicationController
     @art = Art.find(params[:id])
   end
 
+  def destroy
+    @art = Art.find(params[:id])
+    if @art.destroy
+      redirect_to action: :index
+    end
+  end
+
   private
 
   def art_params
