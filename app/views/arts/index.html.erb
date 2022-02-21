@@ -1,15 +1,19 @@
 <div class="contents">
   <div class = "contents-kid">
-  <% @arts.each do |art| %>
-      <div class="title">
+   <% @arts.each do |art| %>
+      <div class="art">
         <%# art.title %>
-        <%= link_to art.title, art_path(art.id), method: :get %>
-      </div>
+        <%= link_to art_path(art.id), method: :get do%>
 
-      <div class = "image">
-        <%= image_tag art.images[0].variant(resize: '500x500'), class: 'art-image' %>
+        <div class = "art-title">
+          <%= art.title %>
+        </div>
 
+        <div class = "art-image">
+          <%= image_tag art.images[0].variant(resize: '500x500'), class: 'art-image' %>
+        </div>
+        <% end %>
       </div>
-  <% end %>
+    <% end %>
   </div>
 </div>
