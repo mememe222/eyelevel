@@ -200,9 +200,11 @@ a.post:hover{
   flex-direction: column;
   width: calc(100vw - 400px);
   margin: 0 auto;
+  padding-top: 30px;
   min-height: 100vh;
   border-left:7px solid #e5a199 ;
   border-right: 7px solid #e5a199;
+  font-size: 40px;
 }
 
 
@@ -227,28 +229,6 @@ a.post:hover{
   margin: 5px auto 15px auto;
 }
 
-.image-delete-button {
-  text-align: center;
-  border: solid 1px;
-  cursor: pointer;
-  margin-bottom: 5px;
-}
-
 .other-image{
   margin: 20px auto;
-}
-
-.footer{
-  text-align: center;
-  color: #71718d;
-  background-color: #ffffff;
-  position: absolute;
-  left: 0;
-  right: 0;
-  position: fixed; /* フッターを固定する */
-  bottom: 0; /* 上部から配置の基準位置を決める */
-  left: 0; /* 左から配置の基準位置を決める */
-  width: 100%; /* フッターの横幅を指定する */
-  height: 35px; /* フッターの高さを指定する */
-  padding:10px; /* フッター内側の余白を指定する(上下左右) */
 }

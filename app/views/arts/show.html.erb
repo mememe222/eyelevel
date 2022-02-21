@@ -1,15 +1,21 @@
 <div class="contents">
   <div class="posted-content">
-    <%# image_tag @art.images[0], class: "main-image" %><br>
+    <div class="title-content">
+      <%= @art.title%><br>
+    </div>
+    <div class="memo-content">
+      <%= @art.memo%><br>
+    </div>
+
     <div class="other-images">
       <% @art.images.each do |image| %>
         <div class="other-image">
-          <%= image_tag image.variant(resize: '1000x1000') %>
+        <%= link_to image, "data-lightbox": image do %>
+            <%= image_tag image.variant(resize: '1000x1000') %>
+        <%end%>
         </div>
       <%end%>
     </div>
-    <%= @art.title%><br>
-    <%= @art.memo%><br>
-    <%# link_to '編集', edit_post_path(@post.id)%>
+
   </div>
 </div>
