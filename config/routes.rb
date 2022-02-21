@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   root to: 'arts#index'
-  resources :arts, only: [:index, :new, :create, :show, :destroy]
+  resources :arts, only: [:index, :new, :create, :show, :destroy, :edit, :update]
 end

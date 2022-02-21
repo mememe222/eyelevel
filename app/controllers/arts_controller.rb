@@ -26,6 +26,15 @@ class ArtsController < ApplicationController
     end
   end
 
+  def edit
+    @art = Art.find(params[:id])
+  end
+
+  def update
+    art = Art.find(params[:id])
+    art.update(art_params)
+  end
+
   private
 
   def art_params
