@@ -17,13 +17,9 @@
       <%end%>
     </div>
 
-    <div class="edit btn">
-      <%= link_to 'Edit', edit_art_path(@art.id), method: :get %>
-    </div>
 
-    <div class="delete btn">
-      <%= link_to 'All Delete', art_path(@art.id), method: :delete %>
-    </div>
+      <%= link_to 'Edit', edit_art_path(@art.id), class:"edit btn", method: :get %>
+      <%= link_to 'All Delete', art_path(@art.id), class:"delete btn", method: :delete %>
 
   </div>
 </div>
