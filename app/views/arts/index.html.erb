@@ -3,12 +3,11 @@
    <% @arts.each do |art| %>
       <div class="art-box">
         <div class="art">
+
+          <div class = "art-title">
+            <%= art.title%>
+          </div>
         <%= link_to art_path(art.id), method: :get do%>
-
-        <div class = "art-title">
-          <%= art.title %>
-        </div>
-
         <div class = "art-image">
             <%= image_tag art.images[0].variant(resize: '500x500'), class: 'art-image' %>
         </div>
