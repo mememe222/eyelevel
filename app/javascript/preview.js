@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function(){
+ document.addEventListener("turbolinks:load", function() {
   // 新規投稿・編集ページのフォームを取得
   const postForm = document.getElementById('new_post');
   // プレビューを表示するためのスペースを取得
@@ -105,4 +106,5 @@ document.addEventListener('DOMContentLoaded', function(){
 
   // input要素で値の変化が起きた際に呼び出される関数
   fileField.addEventListener('change', changedFileField);
+ })
 });
