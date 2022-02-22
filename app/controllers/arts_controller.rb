@@ -27,12 +27,16 @@ class ArtsController < ApplicationController
   end
 
   def edit
-    @art = Art.find(params[:id])
+    @arts = Art.find(params[:id])
   end
 
   def update
-    art = Art.find(params[:id])
-    art.update(art_params)
+    @arts = Art.find(params[:id])
+    if @arts.update(art_params)
+      redirect_to root_path
+    else
+      render :edit
+    end
   end
 
   private

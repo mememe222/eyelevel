@@ -110,14 +110,6 @@ a.post:hover{
   border-right: 7px solid #e5a199;
 }
 
-.art{
-  border: 4px solid #82636b;
-
-  margin: 2em 0;
-  padding: 15px 30px;
-  margin-bottom: 5px;
-}
-
 .art-title{
   font-size: 20px;
   color: #000000;
@@ -235,3 +227,47 @@ a.post:hover{
 .other-image{
   margin: 20px auto;
 }
+
+
+
+.art-content{
+  z-index: 1;
+}
+
+
+
+.art-box .art {
+  border: 4px solid #82636b;
+  margin: 0em -2em;
+  padding: 15px 30px;
+  margin-bottom: 20px;
+  position:relative;
+}
+
+  .art-box .art::before {
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      content:"";
+      background:
+          linear-gradient(to right, #cd5c78, #cd5c78 33.33%, transparent 33.33%, transparent 66.66%, #cd5c78 66.66%, #cd5c78) 100% 0 / 300% 5px no-repeat,
+          linear-gradient(to bottom, transparent, transparent 33.33%, #cd5c78 33.33%, #cd5c78 66.66%, transparent 66.66%, transparent) 100% 100% / 5px 300% no-repeat,
+          linear-gradient(to right, #cd5c78, #cd5c78 33.33%, transparent 33.33%, transparent 66.66%, #cd5c78 66.66%, #cd5c78) 0 100% / 300% 5px no-repeat,
+          linear-gradient(to bottom, transparent, transparent 33.33%, #cd5c78 33.33%, #cd5c78 66.66%, transparent 66.66%, transparent) 0 0 / 5px 300% no-repeat;
+      opacity:0;
+      animation:move 2s linear infinite;
+      transition:opacity 0.3s;
+      z-index: 0;
+      pointer-events:none;
+  }
+
+  .art-box .art:hover::before {
+      opacity:1;
+  }
+
+  @keyframes move {
+      0%   { background-position:100% 0, 100% 100%, 0 100%, 0 0; }
+      100% { background-position:0 0, 100% 0, 100% 100%, 0 100%; }
+  }

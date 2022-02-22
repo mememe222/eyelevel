@@ -1,8 +1,8 @@
 <div class="contents">
   <div class = "contents-kid">
    <% @arts.each do |art| %>
-      <div class="art">
-        <%# art.title %>
+      <div class="art-box">
+        <div class="art">
         <%= link_to art_path(art.id), method: :get do%>
 
         <div class = "art-title">
@@ -13,6 +13,7 @@
             <%= image_tag art.images[0].variant(resize: '500x500'), class: 'art-image' %>
         </div>
         <% end %>
+        </div>
       </div>
     <% end %>
   </div>
