@@ -55,6 +55,7 @@ ul,li {
   margin: 0;
 }
 
+/*ヘッダー*/
 
 .header{
   padding: 0px;
@@ -70,6 +71,7 @@ a.main-title{
   font-size: 40px;
   text-decoration: none;
   color: #D56F68;
+  font-family: "Sawarabi Mincho"
 }
 
 a.main-title:hover{
@@ -85,6 +87,7 @@ a.post{
   padding: 10px 100px;
   text-decoration: none;
   background-color: #fff5be;
+  font-family: "Sawarabi Mincho"
 }
 
 a.post:hover{
@@ -93,6 +96,8 @@ a.post:hover{
   background: #ebe1ad;
   border-bottom: 1px solid #385840;
 }
+
+/*トップページ*/
 
 .contents{
   background: repeating-linear-gradient(to right, #fff3de, #fff3de 7px, #BEC6AB 6px, #BEC6AB 22px);
@@ -113,16 +118,22 @@ a.post:hover{
 }
 
 .art-title{
+  background: linear-gradient(140deg, #ece4e1 0%, #ece4e1 50%, #eac5b6 50%, #eac5b6 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #c0a480;
   font-size: 20px;
   width: 80%;
   border-radius: 30px;
   margin: 0 auto;
-  color: #000000;
+  color: #5b4b36;
   margin-bottom: 10px;
-  background-color: #F6E1D5;
-  border: 1px solid #d7c3b7;
   text-decoration: none;
+  font-family: "Sawarabi Mincho"
 }
+
+
 
 .art-image{
   width: 100%;
@@ -132,13 +143,7 @@ a.post:hover{
   width: calc(100% - 200px);
 }
 
-
-.new-contents{
-  background-color: #fff3de;
-  min-height: 100vh;
-  display: flex;
-}
-
+/*新規投稿ページ*/
 
 .container{
   background-color: rgb(255, 255, 255);
@@ -150,11 +155,13 @@ a.post:hover{
   min-height: 100vh;
   border-left:7px solid #e5a199 ;
   border-right: 7px solid #e5a199;
+  color: #5b4b36;
 }
 
 .sinki{
   font-size: 40px;
   margin: 30px auto;
+  font-family: "Sawarabi Mincho"
 }
 
 .title-form{
@@ -165,6 +172,7 @@ a.post:hover{
   border: 4px solid #7a5b63;
   border-radius: 240px 15px 185px 15px / 15px 200px 15px 185px;
   padding: 30px;
+  font-family: "Sawarabi Mincho"
 }
 
 
@@ -177,6 +185,7 @@ a.post:hover{
   border-radius: 240px 15px 185px 15px / 15px 200px 15px 185px;
   margin: 2em 0;
   padding: 30px;
+  font-family: "Sawarabi Mincho"
 }
 
 .image-file{
@@ -193,6 +202,7 @@ a.post:hover{
   font-size: 30px;
   margin-bottom: 50px;
   width: 400px;
+  font-family: "Sawarabi Mincho"
 }
 
 .send:hover{
@@ -201,6 +211,52 @@ a.post:hover{
   background: #a06b73;
   border-bottom: 1px solid #385840;
 }
+
+.image-delete-button{
+  border: 1px solid #000000;
+  margin: 0 auto 20px;
+  width: calc(100% - 500px);
+  font-family: "Sawarabi Mincho"
+}
+
+.art-box .art {
+  border: 4px solid #966f78;
+  margin: 0em -2em;
+  padding: 15px 30px;
+  margin: 0 50px 40px 50px;
+  position:relative;
+}
+
+  .art-box .art::before {
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      content:"";
+      background:
+          linear-gradient(to right, #e5a199, #e5a199 33.33%, transparent 33.33%, transparent 66.66%, #e5a199 66.66%, #e5a199) 100% 0 / 300% 5px no-repeat,
+          linear-gradient(to bottom, transparent, transparent 33.33%, #e5a199 33.33%, #e5a199 66.66%, transparent 66.66%, transparent) 100% 100% / 5px 300% no-repeat,
+          linear-gradient(to right, #e5a199, #e5a199 33.33%, transparent 33.33%, transparent 66.66%, #e5a199 66.66%, #e5a199) 0 100% / 300% 5px no-repeat,
+          linear-gradient(to bottom, transparent, transparent 33.33%, #e5a199 33.33%, #e5a199 66.66%, transparent 66.66%, transparent) 0 0 / 5px 300% no-repeat;
+      opacity:0;
+      animation:move 2s linear infinite;
+      transition:opacity 0.3s;
+      z-index: 0;
+      pointer-events:none;
+  }
+
+  .art-box .art:hover::before {
+      opacity:1;
+  }
+
+  @keyframes move {
+      0%   { background-position:100% 0, 100% 100%, 0 100%, 0 0; }
+      100% { background-position:0 0, 100% 0, 100% 100%, 0 100%; }
+  }
+
+
+/*詳細ページ*/
 
 .posted-content{
   background-color: rgb(255, 255, 255);
@@ -214,41 +270,23 @@ a.post:hover{
   border-left:7px solid #e5a199 ;
   border-right: 7px solid #e5a199;
   font-size: 40px;
-}
-
-
-.more{
-  background-color: rgb(255, 255, 255);
-  padding: 50px 40px;
-
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  margin: 0 auto;
-  border-left:7px solid #e5a199 ;
-  border-right: 7px solid #e5a199;
-}
-
-.preview-image{
-  width: 700px;
-}
-
-.image-delete-button {
-  text-align: center;
-  border: solid 1px;
-  cursor: pointer;
-  width: 300px;
-  margin: 5px auto 50px auto;
+  font-family: "Sawarabi Mincho";
+  color: #5b4b36;
 }
 
 .other-image{
   margin: 20px auto;
 }
 
+.preview-image{
+  width: 700px;
+}
+
+
 .edit{
   margin: 0 auto;
   font-weight: bold;
-  color: #ffffff;
+  color: #e5e5e5;
   border-bottom: 5px solid #7c545e;
   padding: 10px 100px;
   text-decoration: none;
@@ -285,39 +323,5 @@ a.post:hover{
   border-bottom: 1px solid #000000;
 }
 
+/*編集ページ*/
 
-.art-box .art {
-  border: 4px solid #966f78;
-  margin: 0em -2em;
-  padding: 15px 30px;
-  margin: 0 50px 40px 50px;
-  position:relative;
-}
-
-  .art-box .art::before {
-      position:absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-      content:"";
-      background:
-          linear-gradient(to right, #cd5c78, #cd5c78 33.33%, transparent 33.33%, transparent 66.66%, #cd5c78 66.66%, #cd5c78) 100% 0 / 300% 5px no-repeat,
-          linear-gradient(to bottom, transparent, transparent 33.33%, #cd5c78 33.33%, #cd5c78 66.66%, transparent 66.66%, transparent) 100% 100% / 5px 300% no-repeat,
-          linear-gradient(to right, #cd5c78, #cd5c78 33.33%, transparent 33.33%, transparent 66.66%, #cd5c78 66.66%, #cd5c78) 0 100% / 300% 5px no-repeat,
-          linear-gradient(to bottom, transparent, transparent 33.33%, #cd5c78 33.33%, #cd5c78 66.66%, transparent 66.66%, transparent) 0 0 / 5px 300% no-repeat;
-      opacity:0;
-      animation:move 2s linear infinite;
-      transition:opacity 0.3s;
-      z-index: 0;
-      pointer-events:none;
-  }
-
-  .art-box .art:hover::before {
-      opacity:1;
-  }
-
-  @keyframes move {
-      0%   { background-position:100% 0, 100% 100%, 0 100%, 0 0; }
-      100% { background-position:0 0, 100% 0, 100% 100%, 0 100%; }
-  }

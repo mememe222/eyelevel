@@ -1,6 +1,6 @@
 class ArtsController < ApplicationController
   def index
-    @arts = Art.all
+    @arts = Art.all.order("created_at DESC")
   end
   
   def new
