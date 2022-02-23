@@ -20,9 +20,24 @@
      <header class="header">
       <div class="header__bar">
         <h1><a class="main-title btn" href="/">Eyelevel*</a></h1>
-        <div class="post-botan">
-          <a class="post btn" href="/arts/new" >Add art</a>
         </div>
+
+
+        <div class="devise">
+          <% if user_signed_in? %>
+            <div class="log-in">
+                <a class="post btn" href="/arts/new" >Add art</a>
+                <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "logout btn" %>
+            </div>
+          <% else %>
+            <div class="log-out">
+              <%= link_to "Log in", new_user_session_path, class: "post btn" %>
+              <%= link_to "新規登録", new_user_registration_path, class: "post btn" %>
+            </div>
+          <% end %>
+        </div>
+
+
       </div>
     </header>
 
