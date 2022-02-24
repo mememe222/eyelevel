@@ -30,7 +30,9 @@
            </div>
             <div class="log-in">
                 <a class="post btn" href="/arts/new" >Add art</a>
-                <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "logout btn" %>
+                <%= link_to  destroy_user_session_path, method: :delete, class: "logout btn" do%>
+                  <span>Log out</span>
+                <% end %>
             </div>
           <% else %>
             <div class="log-out">

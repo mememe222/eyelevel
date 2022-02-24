@@ -62,9 +62,9 @@ ul,li {
   width: 100%;
   text-align: center;
   border: 4px solid #5f2b2b;
-	outline: 4px solid rgb(255, 255, 255);
-	outline-offset: -8px;
   position: relative;
+  background-size: auto 160px;
+  background-image: url(https://pbs.twimg.com/media/FMVBzDQVEAkQwOp?format=jpg&name=large)
 }
 
 a.main-title{
@@ -98,33 +98,67 @@ a.post:hover{
   border-bottom: 1px solid #385840;
 }
 
-a.logout{
-  font-weight: bold;
-  color: #ece2d7;
-  border-bottom: 5px solid #1b1416;
-  padding: 10px 100px;
-  text-decoration: none;
-  background-color: #775760;
+
+
+
+a.logout {
+  overflow: hidden;
+
+  padding: 1.5rem 6rem;
+
+  color: #fff;
+  border-radius: 0;
+  background: #64585c;
+  border-radius: 5px;
   font-family: "Sawarabi Mincho"
 }
 
-a.logout:hover{
-  color: #f879b6;
-  margin-top: 4px;
-  background: #5d4149;
-  border-bottom: 1px solid #1b1416;
+a.logout span {
+  position: relative;
 }
 
-.header-login{
+a.logout:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100px;
+  height: 100px;
+
+  content: '';
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-80%) translateY(-25px);
+  transform: translateX(-80%) translateY(-25px);
+
+  border-radius: 50%;
+  background: #f3aa96;
+}
+
+a.logout:hover:before {
+  width: 400px;
+  height: 400px;
+
+  -webkit-transform: translateX(-1%) translateY(-175px);
+
+  transform: translateX(-1%) translateY(-175px);
+}
+
+
+
+
+
+
+  .header-login{
   display: flex;
 }
 
 .nickname{
-  font-size: 25px;
+  font-size: 20px;
   color: #5b4b36;
   font-family: "Sawarabi Mincho";
   position: absolute;
-  top: 35px;
+  top: 28px;
   right: 30px;
   border-bottom: 2px solid#5b4b36;
 }
