@@ -63,8 +63,8 @@ ul,li {
   text-align: center;
   border: 4px solid #5f2b2b;
   position: relative;
-  background-size: auto 160px;
-  background-image: url(https://pbs.twimg.com/media/FMVBzDQVEAkQwOp?format=jpg&name=large)
+  background-size: auto 157px;
+  background-image: url(https://pbs.twimg.com/media/FMV3ic6aUAAFDkM?format=jpg&name=4096x4096)
 }
 
 a.main-title{
@@ -72,7 +72,7 @@ a.main-title{
   text-decoration: none;
   color: #D56F68;
   margin-bottom: 15px;
-  font-family: "Sawarabi Mincho"
+  font-family: "Sawarabi Mincho";
 }
 
 a.main-title:hover{
@@ -88,7 +88,7 @@ a.post{
   padding: 10px 100px;
   text-decoration: none;
   background-color: #fff5be;
-  font-family: "Sawarabi Mincho"
+  font-family: "Sawarabi Mincho";
 }
 
 a.post:hover{
@@ -110,7 +110,7 @@ a.logout {
   border-radius: 0;
   background: #64585c;
   border-radius: 5px;
-  font-family: "Sawarabi Mincho"
+  font-family: "Sawarabi Mincho";
 }
 
 a.logout span {
@@ -155,7 +155,7 @@ a.new {
   border-radius: 0;
   background: #64585c;
   border-radius: 5px;
-  font-family: "Sawarabi Mincho"
+  font-family: "Sawarabi Mincho";
 }
 
 a.new span {
@@ -200,7 +200,7 @@ a.in {
   border-radius: 0;
   background: #64585c;
   border-radius: 5px;
-  font-family: "Sawarabi Mincho"
+  font-family: "Sawarabi Mincho";
 }
 
 a.in span {
@@ -245,7 +245,7 @@ a.up {
   border-radius: 0;
   background: #64585c;
   border-radius: 5px;
-  font-family: "Sawarabi Mincho"
+  font-family: "Sawarabi Mincho";
 }
 
 a.up span {
@@ -290,9 +290,8 @@ a.up:hover:before {
   color: #5b4b36;
   font-family: "Sawarabi Mincho";
   position: absolute;
-  top: 28px;
+  top: 35px;
   right: 30px;
-  border-bottom: 2px solid#5b4b36;
 }
 
 
@@ -321,7 +320,7 @@ a.up:hover:before {
   font-size: 40px;
   color: #5b4b36;
   margin: 30px auto;
-  font-family: "Sawarabi Mincho"
+  font-family: "Sawarabi Mincho";
 }
 
 .art-title{
@@ -337,7 +336,7 @@ a.up:hover:before {
   color: #5b4b36;
   margin-bottom: 10px;
   text-decoration: none;
-  font-family: "Sawarabi Mincho"
+  font-family: "Sawarabi Mincho";
 }
 
 
@@ -368,7 +367,7 @@ a.up:hover:before {
 .sinki{
   font-size: 40px;
   margin: 30px auto;
-  font-family: "Sawarabi Mincho"
+  font-family: "Sawarabi Mincho";
 }
 
 .title-form{
@@ -379,7 +378,7 @@ a.up:hover:before {
   border: 4px solid #7a5b63;
   border-radius: 240px 15px 185px 15px / 15px 200px 15px 185px;
   padding: 30px;
-  font-family: "Sawarabi Mincho"
+  font-family: "Sawarabi Mincho";
 }
 
 
@@ -392,7 +391,11 @@ a.up:hover:before {
   border-radius: 240px 15px 185px 15px / 15px 200px 15px 185px;
   margin: 2em 0;
   padding: 30px;
-  font-family: "Sawarabi Mincho"
+  font-family: "Sawarabi Mincho";
+}
+
+.click-upload{
+  font-family: "Sawarabi Mincho";
 }
 
 .image-file{
@@ -409,7 +412,7 @@ a.up:hover:before {
   font-size: 30px;
   margin-bottom: 50px;
   width: 400px;
-  font-family: "Sawarabi Mincho"
+  font-family: "Sawarabi Mincho";
 }
 
 .send:hover{
@@ -423,7 +426,7 @@ a.up:hover:before {
   border: 1px solid #000000;
   margin: 0 auto 20px;
   width: calc(100% - 500px);
-  font-family: "Sawarabi Mincho"
+  font-family: "Sawarabi Mincho";
 }
 
 .art-box .art {
@@ -490,44 +493,102 @@ a.up:hover:before {
 }
 
 
-.edit{
-  margin: 0 auto;
-  font-weight: bold;
-  color: #e5e5e5;
-  border-bottom: 5px solid #7c545e;
-  padding: 10px 100px;
-  text-decoration: none;
-  background-color: #f3adc8;
-  font-size: 30px;
-  margin-bottom: 50px;
-  width: 400px;
-}
 
-.edit:hover{
-  color: #e5e5e5;
-  margin-top: 4px;
-  background: #cc85a0;
-  border-bottom: 1px solid #7c545e;
-}
 
-.delete{
-  margin: 0 auto;
-  font-weight: bold;
+a.edit{
+  width: 300px;
+  margin: 0 auto 30px;
+  overflow: hidden;
+
+
+  padding: 1.5rem 6rem;
+
   color: #ffffff;
-  border-bottom: 5px solid #000000;
-  padding: 10px 100px;
-  text-decoration: none;
-  background-color: #7e8596;
-  font-size: 30px;
-  margin-bottom: 50px;
-  width: 400px;
+  border-radius: 0;
+  background: #64585c;
+  border-radius: 5px;
+  font-family: "Sawarabi Mincho";
 }
 
-.delete:hover{
-  color: #e5e5e5;
-  margin-top: 4px;
-  background: #646a7a;
-  border-bottom: 1px solid #000000;
+.edit span {
+  position: relative;
+}
+
+a.edit:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100px;
+  height: 100px;
+
+  content: '';
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-80%) translateY(-25px);
+  transform: translateX(-80%) translateY(-25px);
+
+  border-radius: 50%;
+  background: #e7d557;
+}
+
+a.edit:hover:before {
+  width: 400px;
+  height: 400px;
+
+  -webkit-transform: translateX(-1%) translateY(-175px);
+
+  transform: translateX(-1%) translateY(-175px);
+}
+
+
+
+
+
+a.delete{
+  width: 300px;
+  margin: 0 auto 30px;
+  overflow: hidden;
+
+
+  padding: 1.5rem 6rem;
+
+  color: #ffffff;
+  border-radius: 0;
+  background: #64585c;
+  border-radius: 5px;
+  font-family: "Sawarabi Mincho";
+}
+
+.delete span {
+  position: relative;
+}
+
+a.delete:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100px;
+  height: 100px;
+
+  content: '';
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-80%) translateY(-25px);
+  transform: translateX(-80%) translateY(-25px);
+
+  border-radius: 50%;
+  background: #95a69c;
+}
+
+a.delete:hover:before {
+  width: 400px;
+  height: 400px;
+
+  -webkit-transform: translateX(-1%) translateY(-175px);
+
+  transform: translateX(-1%) translateY(-175px);
 }
 
 /*新規登録*/
@@ -540,7 +601,7 @@ a.up:hover:before {
 .sign-form{
   margin-top: 5px;
   font-size: 15px;
-  width: calc(100vh - 800px);
+  width: calc(100% - 80px);
   height: 40px;
   border: 2px solid #82636b;
   padding: 10px;

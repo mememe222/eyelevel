@@ -18,8 +18,8 @@
     </div>
 
 
-      <%= link_to 'Edit', edit_art_path(@art.id), class:"edit btn", method: :get %>
-      <%= link_to 'All Delete', art_path(@art.id), class:"delete btn", method: :delete %>
+      <%= link_to edit_art_path(@art.id), class:"edit btn", method: :get do%><span>Edit</span><%end%>
+      <%= link_to art_path(@art.id), class:"delete btn", method: :delete do%><span>Delete</span><%end%>
 
   </div>
 </div>
