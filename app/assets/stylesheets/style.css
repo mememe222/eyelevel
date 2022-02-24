@@ -320,6 +320,7 @@ a.up:hover:before {
   font-size: 40px;
   color: #5b4b36;
   margin: 30px auto;
+  width: 80%;
   font-family: "Sawarabi Mincho";
 }
 
@@ -330,9 +331,9 @@ a.up:hover:before {
   align-items: center;
   border: 1px solid #c0a480;
   font-size: 20px;
-  width: 80%;
+  width: 50%;
   border-radius: 30px;
-  margin: 0 auto;
+  margin: 5px auto;
   color: #5b4b36;
   margin-bottom: 10px;
   text-decoration: none;
@@ -342,11 +343,12 @@ a.up:hover:before {
 
 
 .art-image{
-  width: 100%;
+  width: 90%;
+  margin: 10px auto;
 }
 
 .art-image2{
-  width: calc(100% - 200px);
+  width: 70%;
 }
 
 /*新規投稿ページ*/
@@ -430,10 +432,10 @@ a.up:hover:before {
 }
 
 .art-box .art {
+  width: 80%;
   border: 4px solid #966f78;
-  margin: 0em -2em;
   padding: 15px 30px;
-  margin: 0 50px 40px 50px;
+  margin: 0 auto 40px auto;
   position:relative;
 }
 
