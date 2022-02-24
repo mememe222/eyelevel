@@ -29,15 +29,15 @@
             <%= "Name:#{current_user.nickname}" %>
            </div>
             <div class="log-in">
-                <a class="post btn" href="/arts/new" >Add art</a>
+                <a class="new btn" href="/arts/new" ><span>Add art</span></a>
                 <%= link_to  destroy_user_session_path, method: :delete, class: "logout btn" do%>
                   <span>Log out</span>
                 <% end %>
             </div>
           <% else %>
             <div class="log-out">
-              <%= link_to "Log in", new_user_session_path, class: "post btn" %>
-              <%= link_to "新規登録", new_user_registration_path, class: "post btn" %>
+              <%= link_to new_user_registration_path, class: "up btn" do%><span>sign up</span><% end %>
+              <%= link_to new_user_session_path, class: "in btn" do%><span>Log in</span><% end %>
             </div>
           <% end %>
         </div>
