@@ -1,4 +1,6 @@
 class ArtsController < ApplicationController
+  before_action :authenticate_user!, { only: [:new, :edit, :destroy] }
+
   def index
     @arts = Art.all.order("created_at DESC")
   end
@@ -42,7 +44,7 @@ class ArtsController < ApplicationController
   private
 
   def art_params
-    params.require(:art).permit(:title, :memo, {images: []})
+    params.require(:art).permit(:title, :memo, {images: []}).merge(user_id: current_user.id)
   end
 
 end
