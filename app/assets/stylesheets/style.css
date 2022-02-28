@@ -11,7 +11,7 @@ html {
   font-size: 62.5%;/*rem算出をしやすくするために*/
 }
 
-.wf-sawarabimincho { font-family: "Sawarabi Mincho"; }
+
 
 .btn,
 a.btn,
@@ -21,7 +21,6 @@ button.btn {
   line-height: 1.5;
   position: relative;
   display: inline-block;
-  padding: 1rem 4rem;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -55,27 +54,56 @@ ul,li {
   margin: 0;
 }
 
+/*ヘッダー*/
 
 .header{
-  padding: 0px;
-  border-bottom: 5px solid #677a63;
   background: linear-gradient(180deg, #fff3de 0%, #fff5e3 50%, #aeac78 50%, #aeac78 100%) ;
-  height: 160px;
+  height: 165px;
   width: 100%;
   text-align: center;
-
+  border: 4px solid #5f2b2b;
+  position: relative;
+  background-size: auto 157px;
+  background-image: url(eyelevel-background.jpg)
 }
 
 a.main-title{
   font-size: 40px;
   text-decoration: none;
   color: #D56F68;
+  margin-bottom: 15px;
+  font-family: "Sawarabi Mincho";
+  transition: .3s;
 }
 
-a.main-title:hover{
-  font-size: 40px;
-  text-decoration: none;
-  color: #D14047;
+a.main-title span {
+  display: inline-block;
+}
+a.main-title:hover span {
+  -webkit-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+  transition: .6s;
+  color: #eb6d9a;
+}
+a.main-title:hover span:nth-of-type(1) {
+  -webkit-transition-delay: .02s;
+  transition-delay: .02s;
+}
+a.main-title:hover span:nth-of-type(2) {
+  -webkit-transition-delay: .04s;
+  transition-delay: .04s;
+}
+a.main-title:hover span:nth-of-type(3) {
+  -webkit-transition-delay: .06s;
+  transition-delay: .06s;
+}
+a.main-title:hover span:nth-of-type(4) {
+  -webkit-transition-delay: .08s;
+  transition-delay: .08s;
+}
+a.main-title:hover span:nth-of-type(5) {
+  -webkit-transition-delay: .10s;
+  transition-delay: .10s;
 }
 
 a.post{
@@ -85,6 +113,7 @@ a.post{
   padding: 10px 100px;
   text-decoration: none;
   background-color: #fff5be;
+  font-family: "Sawarabi Mincho";
 }
 
 a.post:hover{
@@ -94,6 +123,206 @@ a.post:hover{
   border-bottom: 1px solid #385840;
 }
 
+
+
+
+a.logout {
+  overflow: hidden;
+
+  padding: 1.5rem 6rem;
+
+  color: #fff;
+  border-radius: 0;
+  background: #64585c;
+  border-radius: 5px;
+  font-family: "Sawarabi Mincho";
+}
+
+a.logout span {
+  position: relative;
+}
+
+a.logout:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100px;
+  height: 100px;
+
+  content: '';
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-80%) translateY(-25px);
+  transform: translateX(-80%) translateY(-25px);
+
+  border-radius: 50%;
+  background: #869fbe;
+}
+
+a.logout:hover:before {
+  width: 400px;
+  height: 400px;
+
+  -webkit-transform: translateX(-1%) translateY(-175px);
+
+  transform: translateX(-1%) translateY(-175px);
+}
+
+
+
+a.new {
+  overflow: hidden;
+
+  padding: 1.5rem 6rem;
+
+  color: #fff;
+  border-radius: 0;
+  background: #64585c;
+  border-radius: 5px;
+  font-family: "Sawarabi Mincho";
+}
+
+a.new span {
+  position: relative;
+}
+
+a.new:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100px;
+  height: 100px;
+
+  content: '';
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-80%) translateY(-25px);
+  transform: translateX(-80%) translateY(-25px);
+
+  border-radius: 50%;
+  background: #f3aa96;
+}
+
+a.new:hover:before {
+  width: 400px;
+  height: 400px;
+
+  -webkit-transform: translateX(-1%) translateY(-175px);
+
+  transform: translateX(-1%) translateY(-175px);
+}
+
+
+
+a.in {
+  overflow: hidden;
+
+  padding: 1.5rem 6rem;
+
+  color: #fff;
+  border-radius: 0;
+  background: #64585c;
+  border-radius: 5px;
+  font-family: "Sawarabi Mincho";
+}
+
+a.in span {
+  position: relative;
+}
+
+a.in:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100px;
+  height: 100px;
+
+  content: '';
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-80%) translateY(-25px);
+  transform: translateX(-80%) translateY(-25px);
+
+  border-radius: 50%;
+  background: #717d9a;
+}
+
+a.in:hover:before {
+  width: 400px;
+  height: 400px;
+
+  -webkit-transform: translateX(-1%) translateY(-175px);
+
+  transform: translateX(-1%) translateY(-175px);
+}
+
+
+
+a.up {
+  overflow: hidden;
+
+  padding: 1.5rem 6rem;
+
+  color: #fff;
+  border-radius: 0;
+  background: #64585c;
+  border-radius: 5px;
+  font-family: "Sawarabi Mincho";
+}
+
+a.up span {
+  position: relative;
+}
+
+a.up:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100px;
+  height: 100px;
+
+  content: '';
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-80%) translateY(-25px);
+  transform: translateX(-80%) translateY(-25px);
+
+  border-radius: 50%;
+  background: #a675a5;
+}
+
+a.up:hover:before {
+  width: 400px;
+  height: 400px;
+
+  -webkit-transform: translateX(-1%) translateY(-175px);
+
+  transform: translateX(-1%) translateY(-175px);
+}
+
+
+
+.header-login{
+  display: flex;
+}
+
+.nickname{
+  font-size: 20px;
+  color: #6d593e;
+  font-family: "Sawarabi Mincho";
+  position: absolute;
+  top: 35px;
+  right: 30px;
+}
+
+
+
+/*トップページ*/
+
 .contents{
   background: repeating-linear-gradient(to right, #fff3de, #fff3de 7px, #BEC6AB 6px, #BEC6AB 22px);
   min-height: 100vh;
@@ -102,7 +331,7 @@ a.post:hover{
 
 .contents-kid{
   background-color: rgb(255, 255, 255);
-  padding: 50px 40px;
+  padding: 0 40px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -112,33 +341,42 @@ a.post:hover{
   border-right: 7px solid #e5a199;
 }
 
-.art-title{
-  font-size: 20px;
+.gallery{
+  font-size: 40px;
+  color: #5b4b36;
+  margin: 30px auto;
   width: 80%;
-  border-radius: 30px;
-  margin: 0 auto;
-  color: #000000;
-  margin-bottom: 10px;
-  background-color: #F6E1D5;
-  border: 1px solid #d7c3b7;
-  text-decoration: none;
+  font-family: "Sawarabi Mincho";
 }
 
+.art-title{
+  background: linear-gradient(140deg, #ece4e1 0%, #ece4e1 50%, #eac5b6 50%, #eac5b6 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #c0a480;
+  font-size: 20px;
+  width: 50%;
+  border-radius: 30px;
+  margin: 5px auto;
+  color: #5b4b36;
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-family: "Sawarabi Mincho";
+}
+
+
+
 .art-image{
-  width: 100%;
+  width: 90%;
+  margin: 10px auto;
 }
 
 .art-image2{
-  width: calc(100% - 200px);
+  width: 70%;
 }
 
-
-.new-contents{
-  background-color: #fff3de;
-  min-height: 100vh;
-  display: flex;
-}
-
+/*新規投稿ページ*/
 
 .container{
   background-color: rgb(255, 255, 255);
@@ -150,11 +388,13 @@ a.post:hover{
   min-height: 100vh;
   border-left:7px solid #e5a199 ;
   border-right: 7px solid #e5a199;
+  color: #5b4b36;
 }
 
 .sinki{
   font-size: 40px;
   margin: 30px auto;
+  font-family: "Sawarabi Mincho";
 }
 
 .title-form{
@@ -165,6 +405,7 @@ a.post:hover{
   border: 4px solid #7a5b63;
   border-radius: 240px 15px 185px 15px / 15px 200px 15px 185px;
   padding: 30px;
+  font-family: "Sawarabi Mincho";
 }
 
 
@@ -177,6 +418,11 @@ a.post:hover{
   border-radius: 240px 15px 185px 15px / 15px 200px 15px 185px;
   margin: 2em 0;
   padding: 30px;
+  font-family: "Sawarabi Mincho";
+}
+
+.click-upload{
+  font-family: "Sawarabi Mincho";
 }
 
 .image-file{
@@ -193,6 +439,7 @@ a.post:hover{
   font-size: 30px;
   margin-bottom: 50px;
   width: 400px;
+  font-family: "Sawarabi Mincho";
 }
 
 .send:hover{
@@ -202,95 +449,18 @@ a.post:hover{
   border-bottom: 1px solid #385840;
 }
 
-.posted-content{
-  background-color: rgb(255, 255, 255);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  margin: 0 auto;
-  padding-top: 30px;
-  min-height: 100vh;
-  border-left:7px solid #e5a199 ;
-  border-right: 7px solid #e5a199;
-  font-size: 40px;
+.image-delete-button{
+  border: 1px solid #000000;
+  margin: 0 auto 20px;
+  width: calc(100% - 500px);
+  font-family: "Sawarabi Mincho";
 }
-
-
-.more{
-  background-color: rgb(255, 255, 255);
-  padding: 50px 40px;
-
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  margin: 0 auto;
-  border-left:7px solid #e5a199 ;
-  border-right: 7px solid #e5a199;
-}
-
-.preview-image{
-  width: 700px;
-}
-
-.image-delete-button {
-  text-align: center;
-  border: solid 1px;
-  cursor: pointer;
-  width: 300px;
-  margin: 5px auto 50px auto;
-}
-
-.other-image{
-  margin: 20px auto;
-}
-
-.edit{
-  margin: 0 auto;
-  font-weight: bold;
-  color: #ffffff;
-  border-bottom: 5px solid #7c545e;
-  padding: 10px 100px;
-  text-decoration: none;
-  background-color: #f3adc8;
-  font-size: 30px;
-  margin-bottom: 50px;
-  width: 400px;
-}
-
-.edit:hover{
-  color: #e5e5e5;
-  margin-top: 4px;
-  background: #cc85a0;
-  border-bottom: 1px solid #7c545e;
-}
-
-.delete{
-  margin: 0 auto;
-  font-weight: bold;
-  color: #ffffff;
-  border-bottom: 5px solid #000000;
-  padding: 10px 100px;
-  text-decoration: none;
-  background-color: #7e8596;
-  font-size: 30px;
-  margin-bottom: 50px;
-  width: 400px;
-}
-
-.delete:hover{
-  color: #e5e5e5;
-  margin-top: 4px;
-  background: #646a7a;
-  border-bottom: 1px solid #000000;
-}
-
 
 .art-box .art {
+  width: 80%;
   border: 4px solid #966f78;
-  margin: 0em -2em;
   padding: 15px 30px;
-  margin: 0 50px 40px 50px;
+  margin: 0 auto 40px auto;
   position:relative;
 }
 
@@ -302,10 +472,10 @@ a.post:hover{
       height:100%;
       content:"";
       background:
-          linear-gradient(to right, #cd5c78, #cd5c78 33.33%, transparent 33.33%, transparent 66.66%, #cd5c78 66.66%, #cd5c78) 100% 0 / 300% 5px no-repeat,
-          linear-gradient(to bottom, transparent, transparent 33.33%, #cd5c78 33.33%, #cd5c78 66.66%, transparent 66.66%, transparent) 100% 100% / 5px 300% no-repeat,
-          linear-gradient(to right, #cd5c78, #cd5c78 33.33%, transparent 33.33%, transparent 66.66%, #cd5c78 66.66%, #cd5c78) 0 100% / 300% 5px no-repeat,
-          linear-gradient(to bottom, transparent, transparent 33.33%, #cd5c78 33.33%, #cd5c78 66.66%, transparent 66.66%, transparent) 0 0 / 5px 300% no-repeat;
+          linear-gradient(to right, #e5a199, #e5a199 33.33%, transparent 33.33%, transparent 66.66%, #e5a199 66.66%, #e5a199) 100% 0 / 300% 5px no-repeat,
+          linear-gradient(to bottom, transparent, transparent 33.33%, #e5a199 33.33%, #e5a199 66.66%, transparent 66.66%, transparent) 100% 100% / 5px 300% no-repeat,
+          linear-gradient(to right, #e5a199, #e5a199 33.33%, transparent 33.33%, transparent 66.66%, #e5a199 66.66%, #e5a199) 0 100% / 300% 5px no-repeat,
+          linear-gradient(to bottom, transparent, transparent 33.33%, #e5a199 33.33%, #e5a199 66.66%, transparent 66.66%, transparent) 0 0 / 5px 300% no-repeat;
       opacity:0;
       animation:move 2s linear infinite;
       transition:opacity 0.3s;
@@ -321,3 +491,147 @@ a.post:hover{
       0%   { background-position:100% 0, 100% 100%, 0 100%, 0 0; }
       100% { background-position:0 0, 100% 0, 100% 100%, 0 100%; }
   }
+
+
+/*詳細ページ*/
+
+.posted-content{
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 30px;
+  min-height: 100vh;
+  border-left:7px solid #e5a199 ;
+  border-right: 7px solid #e5a199;
+  font-size: 40px;
+  font-family: "Sawarabi Mincho";
+  color: #5b4b36;
+}
+
+.other-image{
+  margin: 20px auto;
+}
+
+.preview-image{
+  width: 700px;
+}
+
+
+
+
+a.edit{
+  width: 300px;
+  margin: 0 auto 30px;
+  overflow: hidden;
+
+
+  padding: 1.5rem 6rem;
+
+  color: #ffffff;
+  border-radius: 0;
+  background: #64585c;
+  border-radius: 5px;
+  font-family: "Sawarabi Mincho";
+}
+
+.edit span {
+  position: relative;
+}
+
+a.edit:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100px;
+  height: 100px;
+
+  content: '';
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-80%) translateY(-25px);
+  transform: translateX(-80%) translateY(-25px);
+
+  border-radius: 50%;
+  background: #e7d557;
+}
+
+a.edit:hover:before {
+  width: 400px;
+  height: 400px;
+
+  -webkit-transform: translateX(-1%) translateY(-175px);
+
+  transform: translateX(-1%) translateY(-175px);
+}
+
+
+
+
+
+a.delete{
+  width: 300px;
+  margin: 0 auto 30px;
+  overflow: hidden;
+
+
+  padding: 1.5rem 6rem;
+
+  color: #ffffff;
+  border-radius: 0;
+  background: #64585c;
+  border-radius: 5px;
+  font-family: "Sawarabi Mincho";
+}
+
+.delete span {
+  position: relative;
+}
+
+a.delete:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100px;
+  height: 100px;
+
+  content: '';
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-80%) translateY(-25px);
+  transform: translateX(-80%) translateY(-25px);
+
+  border-radius: 50%;
+  background: #95a69c;
+}
+
+a.delete:hover:before {
+  width: 400px;
+  height: 400px;
+
+  -webkit-transform: translateX(-1%) translateY(-175px);
+
+  transform: translateX(-1%) translateY(-175px);
+}
+
+/*新規登録*/
+.field{
+  font-size: 20px;
+  padding: 30px;
+  font-family: "Sawarabi Mincho"
+}
+
+.sign-form{
+  margin-top: 5px;
+  font-size: 15px;
+  width: calc(100% - 80px);
+  height: 40px;
+  border: 2px solid #82636b;
+  padding: 10px;
+  font-family: "Sawarabi Mincho"
+}
+
