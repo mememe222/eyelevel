@@ -73,12 +73,37 @@ a.main-title{
   color: #D56F68;
   margin-bottom: 15px;
   font-family: "Sawarabi Mincho";
+  transition: .3s;
 }
 
-a.main-title:hover{
-  font-size: 40px;
-  text-decoration: none;
-  color: #d4333b;
+a.main-title span {
+  display: inline-block;
+}
+a.main-title:hover span {
+  -webkit-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+  transition: .6s;
+  color: #eb6d9a;
+}
+a.main-title:hover span:nth-of-type(1) {
+  -webkit-transition-delay: .02s;
+  transition-delay: .02s;
+}
+a.main-title:hover span:nth-of-type(2) {
+  -webkit-transition-delay: .04s;
+  transition-delay: .04s;
+}
+a.main-title:hover span:nth-of-type(3) {
+  -webkit-transition-delay: .06s;
+  transition-delay: .06s;
+}
+a.main-title:hover span:nth-of-type(4) {
+  -webkit-transition-delay: .08s;
+  transition-delay: .08s;
+}
+a.main-title:hover span:nth-of-type(5) {
+  -webkit-transition-delay: .10s;
+  transition-delay: .10s;
 }
 
 a.post{
@@ -287,7 +312,7 @@ a.up:hover:before {
 
 .nickname{
   font-size: 20px;
-  color: #5b4b36;
+  color: #6d593e;
   font-family: "Sawarabi Mincho";
   position: absolute;
   top: 35px;
