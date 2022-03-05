@@ -13,7 +13,7 @@
 
   # テスト用アカウント
 
-  ・Basic認証用パスワード： adimn
+  ・Basic認証用パスワード： adimin
   ・Basin認証ID： 2222
   ・メールアドレス： test@gmail.com
   ・パスワード： aaa111
@@ -34,13 +34,19 @@
 
   # アプリケーションを作成した背景
 
-  デジタルイラストを作成する際に、作業工程で発生する四つの画像をすべて保存するとフォルダが乱れてしまうという課題がありました。同じ課題を抱えているイラストレーターも多いと考え、ひとつの投稿に複数枚画像を添付し、編集機能を兼ね備えたアプリの開発をしました。
+  デジタルイラストを作成する際に、作業工程で発生する四つの画像をすべて保存するとフォルダが乱れてしまうという課題がありました。
+  
+  同じ課題を抱えているイラストレーターも多いと考え、ひとつの投稿に複数枚画像を添付し、編集機能を兼ね備えたアプリの開発をしました。
 
   # 洗い出した要件
 
   https://docs.google.com/spreadsheets/d/1NSmvSeZQfuMKOupNVH5jsFImSnXE-0bMDJZddF-gW2k/edit#gid=595039049
 
   # 実装した機能についての画像
+
+  [![Image from Gyazo](https://i.gyazo.com/7956afa427c1b9e91f7fd312bebafc55.png)](https://gyazo.com/7956afa427c1b9e91f7fd312bebafc55)
+
+  [![Image from Gyazo](https://i.gyazo.com/4ae92884f9390eaf178f85160cff3cc6.jpg)](https://gyazo.com/4ae92884f9390eaf178f85160cff3cc6)
 
   # 実装予定の機能
 
