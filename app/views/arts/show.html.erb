@@ -17,6 +17,11 @@
       <%end%>
     </div>
 
+    <a href="https://twitter.com/share?url=#{request.url}" class="btn btn-sns btn-sns--twitter">
+      <i class="fa-brands fa-twitter"></i>
+    </a>
+
+
     <% if user_signed_in? && current_user.id == @art.user_id %>
       <%= link_to edit_art_path(@art.id), class:"edit btn", method: :get do%><span>Edit</span><%end%>
       <%= link_to art_path(@art.id), class:"delete btn", method: :delete do%><span>Delete</span><%end%>
