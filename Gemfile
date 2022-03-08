@@ -58,3 +58,4 @@ gem 'image_processing', '~> 1.2'
 gem 'devise'
 gem "aws-sdk-s3", require: false
 gem "kaminari"
+gem 'rspec-rails', '~> 4.0.0'
