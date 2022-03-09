@@ -17,5 +17,24 @@ RSpec.describe User, type: :model do
       @user.valid?
       expect(@user.errors.full_messages).to include "Email can't be blank"
     end
+
+    it 'メールアドレスは、@を含む必要があること' do
+      @user.email = 'testexample'
+      @user.valid?
+      expect(@user.errors.full_messages).to include('Email is invalid')
+    end
+
+    it 'パスワードは、6文字以上での入力が必須であること' do
+      @user.password = 'aaa11'
+      @user.valid?
+      expect(@user.errors.full_messages).to include('Password is too short (minimum is 6 characters)')
+    end
+
+    it 'パスワードは、数字のみのパスワードでは登録できないこと' do
+      @user.password = '111111'
+      @user.valid?
+      binding.pry
+      expect(@user.errors.full_messages).to include('Password には英字と数字の両方を含めて設定してください')
+    end
   end
 end
