@@ -19,7 +19,11 @@ RSpec.describe Art, type: :model do
         expect(@art.errors.full_messages).to include("Images は1枚以上10枚以下にしてください")
       end
 
-
+      it 'タイトルが必須であること' do
+        @art.title = ''
+        @art.valid?
+        expect(@art.errors.full_messages).to include("Title can't be blank")
+      end
     end
   end
 end
