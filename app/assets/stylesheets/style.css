@@ -317,8 +317,8 @@ a.up:hover:before {
   color: #6d593e;
   font-family: "Sawarabi Mincho";
   position: absolute;
-  top: 35px;
-  right: 30px;
+  top: 18px;
+  right: 20px;
 }
 
 
@@ -512,6 +512,21 @@ a.up:hover:before {
   font-size: 40px;
   font-family: "Sawarabi Mincho";
   color: #5b4b36;
+}
+
+.user-content{
+  margin-top: 10px;
+  font-size: 20px;
+  color: #473e6d;
+  text-decoration: none;
+}
+
+.link{
+  text-decoration: none;
+  margin-top: 10px;
+  font-size: 20px;
+  color: #473e6d;
+  text-decoration: none;
 }
 
 
