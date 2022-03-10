@@ -28,7 +28,7 @@
         <div class="devise">
           <% if user_signed_in? %>
            <div class="nickname">
-            <%= "Name:#{current_user.nickname}" %>
+            <%= link_to "Name:#{current_user.nickname}", "/users/#{current_user.id}" %>
            </div>
             <div class="log-in">
                 <a class="new btn" href="/arts/new" ><span>Add art</span></a>
