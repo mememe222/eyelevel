@@ -7,7 +7,7 @@
       <%="Memo: #{@art.memo} "%><br>
     </div>
     <div class="user-content">
-      <%= link_to "投稿者: #{@art.user.nickname} ", "/users/#{@art.user.id}", class: "link btn" %><br>
+      <%= link_to "投稿者: #{@art.user.nickname} ", user_path(@art.user.id), class: "link" %><br>
     </div>
     
 

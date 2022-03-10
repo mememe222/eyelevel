@@ -321,6 +321,9 @@ a.up:hover:before {
   right: 20px;
 }
 
+.nickname:hover{
+  color: #5b6d2f;
+}
 
 
 /*トップページ*/
@@ -529,6 +532,9 @@ a.up:hover:before {
   text-decoration: none;
 }
 
+.link:hover{
+  color: #ca4549;
+}
 
 
 .other-image{
