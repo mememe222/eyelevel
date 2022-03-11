@@ -12,7 +12,6 @@ html {
 }
 
 
-
 .btn,
 a.btn,
 button.btn {
@@ -335,7 +334,8 @@ a.up:hover:before {
 }
 
 .contents-kid{
-  background-color: rgb(255, 255, 255);
+  background-image: url(0670_yagasuri_l.jpg);
+  background-size: auto 200px;
   padding: 0 40px;
   text-align: center;
   display: flex;
@@ -344,6 +344,10 @@ a.up:hover:before {
   margin: 0 auto;
   border-left:7px solid #e5a199 ;
   border-right: 7px solid #e5a199;
+}
+
+.art{
+  background-color: #ffffff;
 }
 
 .gallery{
@@ -395,6 +399,8 @@ a.up:hover:before {
   border-left:7px solid #e5a199 ;
   border-right: 7px solid #e5a199;
   color: #5b4b36;
+  background-image: url(0670_yagasuri_l.jpg);
+  background-size: auto 200px;
 }
 
 .sinki{
