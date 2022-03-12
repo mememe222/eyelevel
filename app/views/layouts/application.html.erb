@@ -10,6 +10,8 @@
 </script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript">
 </script>
+<link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet">
+ <script src="https://kit.fontawesome.com/22bb145daa.js" crossorigin="anonymous"></script>
 <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -26,7 +28,7 @@
         <div class="devise">
           <% if user_signed_in? %>
            <div class="nickname">
-            <%= "Name:#{current_user.nickname}" %>
+            <%= link_to "Name:#{current_user.nickname}", "/users/#{current_user.id}", class:"nickname" %>
            </div>
             <div class="log-in">
                 <a class="new btn" href="/arts/new" ><span>Add art</span></a>
@@ -41,8 +43,6 @@
             </div>
           <% end %>
         </div>
-
-
       </div>
     </header>
 
