@@ -450,11 +450,31 @@ a.up:hover:before {
   background-color: #B67D86;
   font-size: 30px;
   margin-bottom: 50px;
-  width: 60%;
+  width: 300px;
   font-family: "Sawarabi Mincho";
 }
 
 .send:hover{
+  color: #e5e5e5;
+  margin-top: 4px;
+  background: #a06b73;
+  border-bottom: 1px solid #385840;
+}
+
+.delete{
+  font-weight: bold;
+  color: #ffffff;
+  border-bottom: 5px solid #82636b;
+  padding: 10px 100px;
+  text-decoration: none;
+  background-color: #B67D86;
+  font-size: 30px;
+  margin: 50px auto;
+  width: 300px;
+  font-family: "Sawarabi Mincho";
+}
+
+.delete:hover{
   color: #e5e5e5;
   margin-top: 4px;
   background: #a06b73;
