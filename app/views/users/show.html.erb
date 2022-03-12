@@ -1,5 +1,7 @@
 <div class="contents">
   <div class = "contents-kid">
+    <h3 class="gallery">* User Edit *</h3>
+      <%= link_to edit_user_registration_path(current_user.id), class:"edit btn", method: :get do%><span>Edit</span><%end%>
     <h3 class="gallery">* <%= @nickname %>'s art *</h3>
      <% @arts.each do |art| %>
         <div class="art-box">
