@@ -2,7 +2,7 @@ class ArtsController < ApplicationController
   before_action :authenticate_user!, { only: [:new, :edit, :destroy] }
 
   def index
-    @arts = Art.all.order("created_at DESC")
+    @arts = Art.all.order("created_at DESC").page(params[:page]).per(3)
   end
   
   def new

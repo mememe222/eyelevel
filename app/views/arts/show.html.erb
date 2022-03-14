@@ -3,8 +3,11 @@
     <div class="title-content">
       <%= "Title: #{@art.title} "%><br>
     </div>
-    <div class="memo-content">
+    <div class="title-content">
       <%="Memo: #{@art.memo} "%><br>
+    </div>
+    <div class="user-content">
+      <%= link_to "投稿者: #{@art.user.nickname} ", user_path(@art.user.id), class: "link" %><br>
     </div>
     
 

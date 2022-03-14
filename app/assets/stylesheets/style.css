@@ -12,7 +12,6 @@ html {
 }
 
 
-
 .btn,
 a.btn,
 button.btn {
@@ -66,6 +65,8 @@ ul,li {
   background-size: auto 157px;
   background-image: url(eyelevel-background.jpg)
 }
+
+
 
 a.main-title{
   font-size: 40px;
@@ -315,10 +316,13 @@ a.up:hover:before {
   color: #6d593e;
   font-family: "Sawarabi Mincho";
   position: absolute;
-  top: 35px;
-  right: 30px;
+  top: 18px;
+  right: 20px;
 }
 
+.nickname:hover{
+  color: #5b6d2f;
+}
 
 
 /*トップページ*/
@@ -330,7 +334,8 @@ a.up:hover:before {
 }
 
 .contents-kid{
-  background-color: rgb(255, 255, 255);
+  background-image: url(0670_yagasuri_l.jpg);
+  background-size: auto 200px;
   padding: 0 40px;
   text-align: center;
   display: flex;
@@ -339,6 +344,10 @@ a.up:hover:before {
   margin: 0 auto;
   border-left:7px solid #e5a199 ;
   border-right: 7px solid #e5a199;
+}
+
+.art{
+  background-color: #ffffff;
 }
 
 .gallery{
@@ -376,6 +385,7 @@ a.up:hover:before {
   width: 70%;
 }
 
+
 /*新規投稿ページ*/
 
 .container{
@@ -389,6 +399,8 @@ a.up:hover:before {
   border-left:7px solid #e5a199 ;
   border-right: 7px solid #e5a199;
   color: #5b4b36;
+  background-image: url(0670_yagasuri_l.jpg);
+  background-size: auto 200px;
 }
 
 .sinki{
@@ -430,15 +442,14 @@ a.up:hover:before {
 }
 
 .send{
-  font-weight: bold;
   color: #ffffff;
   border-bottom: 5px solid #82636b;
-  padding: 10px 100px;
+  padding: 10px auto;
   text-decoration: none;
   background-color: #B67D86;
   font-size: 30px;
   margin-bottom: 50px;
-  width: 60%;
+  width: 300px;
   font-family: "Sawarabi Mincho";
 }
 
@@ -448,6 +459,7 @@ a.up:hover:before {
   background: #a06b73;
   border-bottom: 1px solid #385840;
 }
+
 
 .image-delete-button{
   border: 1px solid #000000;
@@ -492,6 +504,12 @@ a.up:hover:before {
       100% { background-position:0 0, 100% 0, 100% 100%, 0 100%; }
   }
 
+.delete-acount{
+  font-size: 25px;
+  color: #2b325f;
+  margin: 30px auto;
+  font-family: "Sawarabi Mincho";
+}
 
 /*詳細ページ*/
 
@@ -511,6 +529,24 @@ a.up:hover:before {
   color: #5b4b36;
 }
 
+.user-content{
+  margin-top: 10px;
+  font-size: 20px;
+  color: #473e6d;
+  text-decoration: none;
+}
+
+.link{
+  text-decoration: none;
+  margin-top: 10px;
+  font-size: 20px;
+  color: #473e6d;
+  text-decoration: none;
+}
+
+.link:hover{
+  color: #ca4549;
+}
 
 
 .other-image{
@@ -556,6 +592,7 @@ a.btn-sns--twitter {
 
 
 a.edit{
+
   width: 300px;
   margin: 0 auto 30px;
   overflow: hidden;
