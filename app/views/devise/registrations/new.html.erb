@@ -4,6 +4,10 @@
     <%= form_with model: @user, url: user_registration_path, id: 'new_user', class: 'new_user', local: true do |f| %>
       <%= render "devise/shared/error_messages", resource: resource %>
 
+<div class="field">
+  <%= f.file_field :avatar %>
+</div>
+
       <div class="field">
         <%= f.label :nickname %> <br />
         <%= f.text_field :nickname,class:"sign-form", autofocus: true, maxlength: "15" %>
