@@ -2,13 +2,14 @@
   <div class="container">
 <h3 class="sinki">* Edit User *</h3>
            <% if @user.avatar? %>
+               <p class="profile-image">Profile image</p>
              <%= image_tag @user.avatar.url, class: 'icon-image' %>
            <% else %>
                <%= image_tag ("noavatar.png") %>
            <% end %>
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
-  
+
   <div class="field">
     <%= f.label :nickname %> <br />
     <%= f.text_field :nickname,class:"sign-form", autofocus: true, maxlength: "15" %>
