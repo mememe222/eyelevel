@@ -1,15 +1,51 @@
 <div class="contents">
   <div class="posted-content">
-  <%= image_tag @art.images[0], class: "main-image" %><br>
-  <div class="other-images">
-    <% @art.images[1..-1].each do |image| %>
-      <div class="other-image">
-        <%= image_tag image %>
-      </div>
-    <%end%>
+    <div class="title-content">
+      <%= "Title: #{@art.title} "%><br>
+    </div>
+    <div class="title-content">
+      <%="Memo: #{@art.memo} "%><br>
+    </div>
+    <div class="user-content">
+      <%= link_to "投稿者: #{@art.user.nickname} ", user_path(@art.user.id), class: "link" %><br>
+    </div>
+    
+
+    <div class="SNS-btn">
+      <a href="https://twitter.com/share?url=#{request.url}" class="btn btn-sns btn-sns--twitter">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+
+
+      <script language="JavaScript">
+        function line_button_tag(){
+          var tag= "<div class='line-it-button' data-lang='ja' data-type='share-c' data-ver='3' data-size='large' data-url='{0}' style='display: none;'></div>";
+          tag = tag.replace(/\{0\}/g, location.href);
+          return tag;
+        }
+      </script>
+
+      <script language="JavaScript">document.write(line_button_tag());</script>
+
+      <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+    </div>
+
+
+
+    <div class="other-images">
+      <% @art.images.each do |image| %>
+        <div class="other-image">
+        <%= link_to image, "data-lightbox": image do %>
+            <%= image_tag image.variant(resize: '1000x1000'), class: 'art-image2' %>
+        <%end%>
+        </div>
+      <%end%>
+    </div>
+
+
+    <% if user_signed_in? && current_user.id == @art.user_id %>
+      <%= link_to edit_art_path(@art.id), class:"edit btn", method: :get do%><span>Edit</span><%end%>
+      <%= link_to art_path(@art.id), class:"delete btn", method: :delete do%><span>Delete</span><%end%>
+    <% end %>
   </div>
-  <%= @art.title%><br>
-  <%= @art.memo%><br>
-  <%# link_to '編集', edit_post_path(@post.id)%>
-</div>
 </div>

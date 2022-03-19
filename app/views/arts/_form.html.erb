@@ -1,0 +1,25 @@
+<div class="contents">
+  <div class="container">
+    <h3 class="sinki">* New art *</h3>
+    <%= form_with(model: @arts, local: true,id: 'new_post') do |form| %>
+      <div>
+      <%= form.text_field :title, class:"title-form", placeholder: "Title" %>
+      </div>
+      <%# form.text_field :image, placeholder: "Image Url" %>
+      <div class="form2">
+      <%= form.text_area :memo, class:"memo-form", placeholder: "Memo", rows: "10" %>
+      </div>
+
+      <div class="image-file">
+        <div id="previews"></div>
+        <div class="click-upload">
+          <%= form.file_field :images, accept: 'image/jpg,image/jpeg,image/png,image/gif', name: 'art[images][]', data: {index: 0} %>
+        </div>
+      </div>
+
+        <div class="form3">
+          <%= form.submit "Send",class:"send btn" %>
+        </div>
+    <% end %>
+  </div>
+</div>

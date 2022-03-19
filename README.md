@@ -1,24 +1,92 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+  # アプリケーション名
 
-Things you may want to cover:
+  eyelevel
 
-* Ruby version
+  # アプリケーション概要
 
-* System dependencies
+  一つの投稿に画像を複数枚添付し、管理するアプリ
 
-* Configuration
+  # URL
 
-* Database creation
+  https://eyelevel.herokuapp.com/
 
-* Database initialization
+  # テスト用アカウント
 
-* How to run the test suite
+  ・Basic認証用パスワード： adimin
+  ・Basin認証ID： 2222
+  ・メールアドレス： test@gmail.com
+  ・パスワード： aaa111
 
-* Services (job queues, cache servers, search engines, etc.)
+  # 利用方法
 
-* Deployment instructions
+  ## アート投稿
 
-* ...
+  1.トップページのヘッダーからユーザー新規登録を行う
+
+  2.ヘッダーのAdd Artボタンからアートの内容(タイトル、メモ※任意、画像)を入力し、投稿する
+
+  # アート詳細
+
+  1.一覧ページからアートをクリックしてアートの詳細を確認する
+
+  2.詳細ページの画像をクリックすること拡大表示される
+
+  # アプリケーションを作成した背景
+
+  デジタルイラストを作成する際に、作業工程で発生する四つの画像をすべて保存するとフォルダが乱れてしまうという課題がありました。
+  
+  同じ課題を抱えているイラストレーターも多いと考え、ひとつの投稿に複数枚画像を添付し、編集機能を兼ね備えたアプリの開発をしました。
+
+  # 洗い出した要件
+
+  https://docs.google.com/spreadsheets/d/1NSmvSeZQfuMKOupNVH5jsFImSnXE-0bMDJZddF-gW2k/edit#gid=595039049
+
+  # 実装した機能についての画像
+
+  [![Image from Gyazo](https://i.gyazo.com/7956afa427c1b9e91f7fd312bebafc55.png)](https://gyazo.com/7956afa427c1b9e91f7fd312bebafc55)
+
+  [![Image from Gyazo](https://i.gyazo.com/4ae92884f9390eaf178f85160cff3cc6.jpg)](https://gyazo.com/4ae92884f9390eaf178f85160cff3cc6)
+
+  # 実装予定の機能
+
+  ・タグをつけて検索できる機能
+  ・SNSへの共有機能
+  ・ユーザー編集機能
+  ・アイコン設定機能
+
+  # テーブル設計
+
+  [![Image from Gyazo](https://i.gyazo.com/add5da35aafc0968f0f51f15b2c17792.png)](https://gyazo.com/add5da35aafc0968f0f51f15b2c17792)
+
+  # 画面遷移図
+
+  [![Image from Gyazo](https://i.gyazo.com/4708821fbac75d508953f56b023e1ee3.png)](https://gyazo.com/4708821fbac75d508953f56b023e1ee3)
+
+  # 開発環境
+
+  ・フロントエンド
+
+  ・バックエンド
+
+  ・テキストエディタ
+
+  ・タスク管理
+  
+  # ローカルでの動作方法
+
+  以下のコマンドを順に実行
+
+  % git clone https://github.com/mememe222/eyelevel
+
+  % cd eyelevel
+
+  % bundle install
+
+  % yarn install
+
+  # 工夫したポイント
+
+  アプリの性質上投稿が殺風景になってしまうことを考慮し、サイト全体を視覚的に楽しめるようにデザインしました。
+
+  また、投稿されたイラストを見直して良し悪しを判断することが想定されるため、イラストの印象を変えないカラーリングを心がけました。
