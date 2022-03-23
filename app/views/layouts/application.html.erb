@@ -27,6 +27,8 @@
 
         <div class="devise">
           <% if user_signed_in? %>
+
+
            <div class="nickname">
             <%= link_to "Name:#{current_user.nickname}", "/users/#{current_user.id}", class:"nickname" %>
            </div>
@@ -47,6 +49,12 @@
     </header>
 
       <%= yield %>
+
+    <footer class="footer">
+      <p>
+        Eyelevel* 2022.
+      </p>
+    </footer>
 
   </body>
 </html>

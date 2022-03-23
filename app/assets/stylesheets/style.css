@@ -8,7 +8,7 @@
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-size: 62.5%;/*rem算出をしやすくするために*/
+  font-size: 62.5%;
 }
 
 
@@ -590,6 +590,10 @@ a.btn-sns--twitter {
   margin: 20px 10px;
 }
 
+.icon-image{
+  margin: 0 auto;
+  width: 50%;
+}
 
 a.edit{
 
@@ -705,3 +709,16 @@ a.delete:hover:before {
   font-family: "Sawarabi Mincho"
 }
 
+.profile-image{
+  font-size: 25px;
+  font-family: "Sawarabi Mincho"
+}
+
+.footer{
+  background-color: #ffffff;
+  border-top: 2px solid #82636b;
+  text-align: center;
+  color: #82636b;
+  font-family: "Sawarabi Mincho";
+  font-weight: bold;
+}
