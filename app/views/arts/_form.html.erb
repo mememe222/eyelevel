@@ -13,7 +13,8 @@
       <div class="image-file">
         <div id="previews"></div>
         <div class="click-upload">
-          <%= form.file_field :images, accept: 'image/jpg,image/jpeg,image/png,image/gif', name: 'art[images][]', data: {index: 0} %>
+        <%= form.label :images,class: "image_input_btn"  %>
+          <%= form.file_field :images, accept: 'image/jpg,image/jpeg,image/png,image/gif', name: 'art[images][]', data: {index: 0}, class: "image_form"  %>
         </div>
       </div>
 
