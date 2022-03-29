@@ -711,7 +711,7 @@ a.delete:hover:before {
 
 .profile-image{
   font-size: 25px;
-  font-family: "Sawarabi Mincho"
+  font-family: "Sawarabi Mincho";
 }
 
 .footer{
@@ -725,13 +725,13 @@ a.delete:hover:before {
 
 .image_input_btn{
   display: block;
-  background-color: #228B22;
+  background-color:  #64585c;;
   width: 180px;
   height: 30px;
   margin: 0 auto;
   border-radius: 20px;
   padding-top: 2px;
-  color: white;
+  color: #e5a199;
   text-decoration: none;
   text-align: center;
 }
